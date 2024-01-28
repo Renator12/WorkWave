@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amaranth:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="{{url_for('static',filename='css/output.css')}}"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amaranth:wght@400;700&family=DM+Sans:opsz@9..40&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + React + TS</title>
+  </head>
+  <body>
+    <div class="flex w-screen h-screen">
+      <div class="absolute inset-0 bg-black opacity-50"></div>
+      <img
+        class="w-full h-full object-cover absolute z-[-1]"
+        src="{{ url_for('static', filename='background.png') }}"
+      />
+      <div class="flex flex-col items-center mx-auto my-auto">
+        <div
+          class="text-white text-center w-full text-[8rem] z-[2] font-bold"
+          style="font-family: 'Amaranth', sans-serif"
+        >
+          WorkWave
+        </div>
+        <button
+          style="font-family: 'Amaranth', sans-serif"
+          class="text-white text-5xl bg-[#66969D] px-24 py-4 rounded-2xl z-[2] tracking-wide"
+        >
+          START A WORK SESSION
+        </button>
+      </div>
+    </div>
+    <div class="flex w-screen h-screen">
+      <div class="flex flex-col items-center pt-20 mx-auto font-bol">
+        <h1 class="text-6xl" style="font-family: 'Amaranth', sans-serif">
+          Welcome to your best work assistant
+        </h1>
+        <p class="w-3/4 text-center text-3xl pt-6">
+          WorkWave is an intuitive AI powered work assistant for everyone!
+          Equipped with a posture detection system, playlist generator and
+          workout generator to keep you happy and healthy while getting you work
+          done.
+        </p>
+      </div>
+    </div>
+    <div class="flex flex-col items-center w-screen h-screen bg-[#D9D9D9]">
+      <div class="w-screen flex flex-col pt-6 items-center bg-[#66969D] h-36">
+        <div
+          class="text-white text-4xl font-bold"
+          style="font-family: 'Amaranth', sans-serif"
+        >
+          Our Features
+        </div>
+        <p
+          class="text-white text-lg pt-3"
+          style="font-family: 'DM Sans', sans-serif"
+        >
+          2 key features to optimize your workflow and mental well being while
+          you do it.
+        </p>
+      </div>
+      <div class="flex w-[75%] pb-10">
+        <div class="w-[75%] flex flex-col pt-6 items-center">
+          <img src="{{ url_for('static', filename='emotion_demo.png') }}" />
+          <div class="w-full flex flex-col pt-6 items-center bg-[#66969D] p-8">
+            <div
+              class="text-white text-center text-3xl font-bold"
+              style="font-family: 'Amaranth', sans-serif"
+            >
+              Emotion Based Music Recommendation
+            </div>
+            <p
+              class="text-white text-lg pt-3"
+              style="font-family: 'DM Sans', sans-serif"
+            >
+              We map your facial expressions using visual image detection and
+              recommend you music accordingly.
+            </p>
+          </div>
+        </div>
+        <div class="w-[75%] flex flex-col ml-5 pt-6 items-center">
+          <img src="{{ url_for('static', filename='emotion_demo.png') }}" />
+          <div
+            class="w-full flex flex-col pt-6 pb-10 items-center bg-[#66969D] p-8"
+          >
+            <div
+              class="text-white text-center text-3xl font-bold"
+              style="font-family: 'Amaranth', sans-serif"
+            >
+              Posture Detection System
+            </div>
+            <p
+              class="text-white text-lg pt-3"
+              style="font-family: 'DM Sans', sans-serif"
+            >
+              65% of those who work a desk job develop musculoskeletal pain
+              overtime. Analyzing your posture, we remind you to fix your
+              posture whenever we detect you slouching.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
